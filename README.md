@@ -1,1 +1,0 @@
-# kurt-siefken.github.io
