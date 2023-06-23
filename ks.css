@@ -1,0 +1,146 @@
+
+
+body {
+	font-family: 'Dongle', sans-serif;
+	font-size: 26px;
+	background-color: #e5e8fb;
+	border: 0px solid red;
+	margin: 0px;
+	padding: 0px;
+}
+
+* {box-sizing: border-box;}
+@media print { @page { size: portrait; }}
+
+
+a {text-decoration: none;}
+
+
+.pagestructure {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0px solid green;
+height: 100%;
+}
+
+
+.intro {
+text-align: center;
+}
+
+.nameintro {
+font-family: 'Bayon', sans-serif;
+font-size: 80px;
+display: block;
+line-height: 80px;
+}
+
+
+.smallintro {
+
+}
+
+.smallintro > span {
+margin: 10px;
+}
+
+.linkage {
+margin-top: 30px;
+}
+
+
+.linkage img {
+width: 40px;
+margin: 10px;
+}
+
+.linkage img:hover {
+
+}
+
+
+
+
+@-webkit-keyframes wobble {
+  16.65% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  49.95% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes wobble {
+  16.65% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  49.95% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.wobble {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wobble:hover, .wobble:focus, .wobble:active {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+.parkdot {height: 15px; width: 15px;}
+}
+@media screen and (max-width: 600px) {
+.parkdot {height: 15px; width: 15px;}
+}
+
