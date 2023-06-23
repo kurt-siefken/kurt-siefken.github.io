@@ -9,9 +9,6 @@ body {
 	padding: 0px;
 }
 
-* {box-sizing: border-box;}
-@media print { @page { size: portrait; }}
-
 
 a {text-decoration: none;}
 
@@ -43,6 +40,7 @@ line-height: 80px;
 
 .smallintro > span {
 margin: 10px;
+ line-height: 24px;
 }
 
 .linkage {
@@ -55,10 +53,13 @@ width: 40px;
 margin: 10px;
 }
 
-.linkage img:hover {
 
+
+
+@media screen and (max-width: 600px) {
+.nameintro {font-size: 60px;}
+.smallintro > span {display: block; margin: 0px;}
 }
-
 
 
 
@@ -137,10 +138,5 @@ margin: 10px;
 
 
 
-@media screen and (max-width: 800px) {
-.parkdot {height: 15px; width: 15px;}
-}
-@media screen and (max-width: 600px) {
-.parkdot {height: 15px; width: 15px;}
-}
+
 
